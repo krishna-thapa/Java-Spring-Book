@@ -1,0 +1,8 @@
+[{"author": "Austen, Jane", "title": "Northanger Abbey",  "year_written": 1814, "edition": "Penguin", "price":  18.2},
+{ "author": "Tolstoy, Leo", "title": "War and Peace", "year_written": 1865, "edition": "Penguin", "price":  12.7},
+{"author": "Tolstoy, Leo", "title": "Anna Karenina",  "year_written": 1875, "edition": "Penguin", "price":  13.5},
+{"author": "Woolf, Virginia", "title": "Mrs. Dalloway", "year_written": 1925, "edition": "Harcourt Brace", "price":  25},
+{"author": "Twain, Mark", "title": "Huckleberry Finn", "year_written": 1865, "edition": "Penguin", "price":  5.76},
+{"author": "Dickens, Charles", "title": "Bleak House",  "year_written": 1870, "edition": "Random House", "price":  5.75},
+{"author": "Twain, Mark","title": "Tom Sawyer",  "year_written": 1862, "edition": "Random House", "price":  7.75},
+{"author": "Woolf, Virginia", "title": "A Room of One's Own", "year_written": 1922, "edition": "Penguin", "price":  29}]

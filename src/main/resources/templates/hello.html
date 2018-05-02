@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<title>Hello World!</title>
+</head>
+<body>
+	<h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
+	<form th:action="@{/logout}" method="post">
+		<input type="submit" value="Sign Out" />
+	</form>
+
+
+	<!--/*/ <th:block th:include="fragments/header :: header"></th:block> /*/-->
+	<div th:if="${not #lists.isEmpty(books)}">
+		<h2>Book List</h2>
+		<table class="table table-striped">
+			<tr>
+				<th>Id</th>
+				<th>Book Tile</th>
+				<th>Book Author</th>
+				<th>Year Written</th>
+				<th>Book Edition</th>
+				<th>Book Price</th>
+				<!-- <th>View</th>
+				<th>Edit</th>
+				<th>Delete</th>-->
+			</tr>
+			<tr th:each="book : ${books}">
+				<td th:text="${book.id}"><a href="/book/${book.id}">Id</a></td>
+				<td th:text="${book.title}">Book Tile</td>
+				<td th:text="${book.author}">Book Author</td>
+				<td th:text="${book.year_written}">Year Written</td>
+				<td th:text="${book.edition}">Book Edition</td>
+				<td th:text="${book.price}">Book Price</td>
+				<!--  <td><a th:href="${'/product/' + product.id}">View</a></td>
+				<td><a th:href="${'/product/edit/' + product.id}">Edit</a></td>
+				<td><a th:href="${'/product/delete/' + product.id}">Delete</a></td>-->
+			</tr>
+		</table>
+
+	</div>
+</body>
+</html>
